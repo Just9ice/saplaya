@@ -10,7 +10,7 @@ import "./globals.css";
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://saplayaresidency.com"),
+  metadataBase: new URL("https://saplaya.vercel.app"),
   title: "Saplaya Residency | Mediterranean Life on the Lagos Waterfront",
   description:
     "60 premium apartments and executive terraces in Apapa, Lagos. Designed for professionals, investors, and corporate tenants.",
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Saplaya Residency",
     description: "Mediterranean Life on the Lagos Waterfront",
-    url: "https://saplayaresidency.com",
+    url: "https://saplaya.vercel.app",
     siteName: "Saplaya Residency",
     images: [
       {
-        url: "/Logo.png",
+        url: "/images/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Saplaya Residency Logo",
+        alt: "Saplaya Residency Landing Page",
       },
     ],
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Saplaya Residency",
     description: "Mediterranean Life on the Lagos Waterfront",
-    images: ["/Logo.png"],
+    images: ["/images/hero.jpg"],
   },
 };
 
