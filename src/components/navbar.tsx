@@ -39,12 +39,13 @@ export function Navbar() {
           aria-label="Saplaya Residency"
           className="flex items-center"
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm overflow-hidden">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="Saplaya Residency"
               width={48}
               height={48}
+              className="object-contain p-1"
             />
           </div>
         </Link>
