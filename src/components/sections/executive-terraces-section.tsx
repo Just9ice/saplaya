@@ -36,7 +36,7 @@ export function ExecutiveTerracesSection() {
             className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl"
           >
             <Image
-              src="/images/saplaya.png"
+              src="/images/terrace.png"
               alt="Aerial drone view of Saplaya Residency executive terraces with landscaped courtyards"
               fill
               sizes="(min-width:1024px) 50vw, 90vw"
