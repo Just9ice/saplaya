@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 
@@ -38,7 +38,7 @@ export function PartnersSection() {
     <section id="partners" className="w-full bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <Reveal>
-          <h2 className="text-4xl font-semibold leading-tight lg:text-5xl text-navy mb-16">
+          <h2 className="text-4xl font-semibold leading-tight lg:text-5xl text-[#083d80] mb-16">
             Built by names you can trust.
           </h2>
         </Reveal>
@@ -47,7 +47,7 @@ export function PartnersSection() {
           {partners.map((partner, idx) => (
             <Reveal key={partner.name} delay={0.1 * (idx % 4)}>
               <div className="flex flex-col justify-between h-[200px] p-6 border border-line/60 bg-cream-dark/20 rounded-lg">
-                <h4 className="text-lg font-medium text-navy leading-tight">
+                <h4 className="text-lg font-medium text-[#083d80] leading-tight">
                   {partner.name}
                 </h4>
 

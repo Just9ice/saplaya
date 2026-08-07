@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { Reveal } from "@/components/reveal";
 import { MapPin } from "lucide-react";
 
@@ -52,12 +52,12 @@ export function WhySaplayaSection() {
               <div className="flex flex-col h-full p-8 md:p-10 bg-white rounded-[2rem] shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
                 
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-full border border-line/60 flex items-center justify-center text-navy mb-8 shrink-0">
+                <div className="w-12 h-12 rounded-full border border-line/60 flex items-center justify-center text-[#083d80] mb-8 shrink-0">
                   <MapPin className="w-5 h-5" strokeWidth={1.5} />
                 </div>
                 
                 {/* Text Content */}
-                <h3 className="font-display text-2xl lg:text-3xl text-navy mb-4 leading-tight tracking-tight">
+                <h3 className="font-display text-2xl lg:text-3xl text-[#083d80] mb-4 leading-tight tracking-tight">
                   {reason.title}
                 </h3>
                 

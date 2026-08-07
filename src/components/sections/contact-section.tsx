@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import { Reveal } from "@/components/reveal";
 
@@ -126,7 +126,7 @@ export function ContactSection() {
                   </p>
                   <button
                     type="submit"
-                    className="w-full rounded-3xl bg-[#fdf2e3] py-4 text-xs font-bold uppercase tracking-[0.1em] text-navy transition-all hover:bg-white active:scale-[0.98]"
+                    className="w-full rounded-3xl bg-[#fdf2e3] py-4 text-xs font-bold uppercase tracking-[0.1em] text-[#083d80] transition-all hover:bg-white active:scale-[0.98]"
                   >
                     Send Enquiry
                   </button>

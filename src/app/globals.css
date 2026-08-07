@@ -3,7 +3,7 @@
 :root {
   --color-cream:      #f5f0e6;
   --color-cream-dark: #ede7d6;
-  --color-navy:       #0c1b3a;
+  --color-navy:       #083d80;
   --color-navy-mid:   #162347;
   --color-gold:       #c9a96e;
   --color-gold-dark:  #a8883e;
@@ -24,8 +24,8 @@
   --color-mist:       var(--color-mist);
   --color-line:       var(--color-line);
   --color-line-dark:  var(--color-line-dark);
-  --font-sans:        "Inter", system-ui, sans-serif;
-  --font-display:     "Cormorant Garamond", Georgia, serif;
+  --font-sans:        "Figtree", system-ui, sans-serif;
+  --font-display:     "Instrument Serif", Georgia, serif;
 }
 
 body { background: var(--color-cream); color: var(--color-ink); }

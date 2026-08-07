@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 import { MapPin, ShieldCheck, ArrowUpRight, Briefcase } from "lucide-react";
@@ -31,7 +31,12 @@ export function LocationSection() {
     <section id="location" className="w-full bg-navy py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <Reveal>
-          <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-cream/80 mb-16">
+          <h2
+            style={{
+              fontFamily: "Instrument Serif",
+            }}
+            className="text-sm font-medium tracking-[0.2em] uppercase text-cream/80 mb-16"
+          >
             LOCATION
           </h2>
         </Reveal>
@@ -52,9 +57,21 @@ export function LocationSection() {
           {/* Right Content */}
           <div className="flex flex-col gap-12">
             <Reveal delay={0.1}>
-              <h3 className="text-5xl font-semibold leading-[1.1] lg:text-6xl text-cream">
+              <h3
+                style={{
+                  fontFamily: "Instrument Serif",
+                }}
+                className="text-5xl leading-[1.1] lg:text-6xl text-cream"
+              >
                 Connected.{" "}
-                <span className="font-display italic text-gold">Secure.</span>
+                <span
+                  style={{
+                    fontFamily: "Instrument Serif",
+                  }}
+                  className="font-display italic text-gold"
+                >
+                  Secure.
+                </span>
                 <br />
                 In Demand.
               </h3>

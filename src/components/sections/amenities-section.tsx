@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Image from "next/image";
 import {
   motion,
@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 
-/* ── Custom thin-line SVG icons ────────────────────────────────────────────── */
+/* â”€â”€ Custom thin-line SVG icons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const s = "1.5"; // stroke width shared across all icons
 
 const Icons = {
@@ -334,7 +334,7 @@ function AmenityCell({
       </motion.div>
 
       <motion.span
-        className="text-xs font-medium tracking-wide text-mist transition-colors duration-200 group-hover:text-navy"
+        className="text-xs font-medium tracking-wide text-mist transition-colors duration-200 group-hover:text-[#083d80]"
         initial={{ opacity: 0.7 }}
         whileHover={{ opacity: 1 }}
       >
@@ -349,23 +349,31 @@ export function AmenitiesSection() {
     <section id="amenities" className="w-full bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         {/* Header */}
+        <Reveal>
+          <h2
+            className="mb-4 text-xl uppercase tracking-wide text-[#083d80]"
+            style={{
+              fontFamily: "Figtree",
+            }}
+          >
+            Lifestyle
+          </h2>
+        </Reveal>
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-          <Reveal className="max-w-sm">
-            <h2 className="text-4xl font-semibold leading-tight lg:text-5xl">
-              <span className="font-display italic text-navy">
-                A residency that{" "}
-              </span>
+          <Reveal className="max-w-xl">
+            <h2 className="text-4xl leading-tight lg:text-5xl">
+              <span className="font-display text-[#083d80]">A residency that </span>
               <br />
-              <span className="font-display italic text-gold">looks</span>{" "}
-              <span className="font-display italic text-navy">
-                after its residents.
-              </span>
+              <span className="font-display italic text-gold">
+                looks after
+              </span>{" "}
+              <span className="font-display text-[#083d80]">its residents.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.12} from="right" className="max-w-sm">
             <p className="text-sm leading-relaxed text-mist">
               Every amenity at Saplaya is staffed, serviced, and quietly
-              maintained — the kind of effortlessness one finds at a private
+              maintained â€” the kind of effortlessness one finds at a private
               resort.
             </p>
           </Reveal>
@@ -403,7 +411,7 @@ export function AmenitiesSection() {
           ))}
         </div>
 
-        {/* 4×3 Amenities grid */}
+        {/* 4Ã—3 Amenities grid */}
         <div className="mt-12 overflow-hidden rounded-2xl border border-line/60">
           <div className="grid grid-cols-2 sm:grid-cols-4 [&>*:nth-child(4n)]:border-r-0">
             {amenities.map((amenity, i) => {

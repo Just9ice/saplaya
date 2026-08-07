@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -58,7 +58,7 @@ export function Navbar() {
             <a
               key={l.label}
               href={l.href}
-              className={`text-sm tracking-wide transition-colors text-navy hover:text-navy/60`}
+              className={`text-sm tracking-wide transition-colors text-[#083d80] hover:text-[#083d80]/60`}
             >
               {l.label}
             </a>
@@ -100,7 +100,7 @@ export function Navbar() {
                   key={l.label}
                   href={l.href}
                   onClick={() => setMenuOpen(false)}
-                  className="border-b border-navy/5 pb-3 text-lg font-medium tracking-wide text-navy"
+                  className="border-b border-navy/5 pb-3 text-lg font-medium tracking-wide text-[#083d80]"
                 >
                   {l.label}
                 </a>
