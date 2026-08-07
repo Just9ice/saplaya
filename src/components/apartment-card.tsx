@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -100,7 +100,7 @@ export function ApartmentCard({
                   key={f}
                   className="flex items-start gap-2 text-xs text-mist"
                 >
-                  <span className="mt-0.5 text-gold">â€“</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-gold shrink-0 mt-[3px]"></div>
                   {f}
                 </li>
               ))}
