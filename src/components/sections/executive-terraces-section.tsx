@@ -4,8 +4,8 @@ import { Reveal } from "@/components/reveal";
 const specs = [
   { label: "Area", value: "370 sqm" },
   { label: "Bedrooms", value: "4 en-suite" },
-  { label: "Outdoor", value: "Balcony Â· Courtyard" },
-  { label: "Extras", value: "Lift Â· Kitchen (optional)" },
+  { label: "Outdoor", value: "Balcony · Courtyard" },
+  { label: "Extras", value: "Lift · Kitchen (optional)" },
 ];
 
 export function ExecutiveTerracesSection() {
