@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -67,7 +67,9 @@ export function Navbar() {
 
         {/* CTA (Desktop) */}
         <a
-          href="#contact"
+          href="/saplaya-brochure.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group hidden items-center rounded-full bg-[#081a2f] px-6 py-2.5 text-sm tracking-wide text-white transition-all hover:bg-navy-light active:scale-95 md:inline-flex"
         >
           Download Prospectus
@@ -107,7 +109,9 @@ export function Navbar() {
               ))}
             </nav>
             <a
-              href="#contact"
+              href="/saplaya-brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="group flex w-full items-center justify-center rounded-full bg-[#081a2f] px-6 py-4 text-sm font-semibold tracking-wide text-white transition-all hover:bg-navy-light active:scale-95"
             >
