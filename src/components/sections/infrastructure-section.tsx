@@ -1,9 +1,12 @@
 "use client";
 import Image from "next/image";
+import { useRef } from "react";
 import { Reveal } from "@/components/reveal";
 import {
   motion,
   useAnimationControls,
+  useScroll,
+  useTransform,
   type AnimationDefinition,
 } from "framer-motion";
 import {
@@ -98,6 +101,41 @@ function FeatureCell({
   );
 }
 
+function CourtyardImage() {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  // Image drifts up slightly as you scroll past
+  const y = useTransform(scrollYProgress, [0, 1], ["4%", "-4%"]);
+
+  return (
+    <div ref={ref} className="mt-16 lg:mt-24">
+      <motion.div
+        className="relative w-full h-[380px] lg:h-[520px] overflow-hidden rounded-3xl"
+        initial={{ opacity: 0, scale: 1.04 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-8% 0px" }}
+        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <motion.div
+          className="absolute inset-0"
+          style={{ y }}
+        >
+          <Image
+            src="/images/parkinglot.png"
+            alt="Saplaya Residency courtyard with landscaping, parking and resident amenities"
+            fill
+            sizes="(min-width:1440px) 1440px, 100vw"
+            className="object-cover scale-110"
+          />
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}
+
 export function InfrastructureSection() {
   return (
     <section id="infrastructure" className="w-full bg-cream py-24 lg:py-32">
@@ -159,6 +197,9 @@ export function InfrastructureSection() {
             ))}
           </div>
         </div>
+
+        {/* Courtyard Image — parallax + scale-in */}
+        <CourtyardImage />
       </div>
     </section>
   );

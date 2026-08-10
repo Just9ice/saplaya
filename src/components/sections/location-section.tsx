@@ -33,9 +33,9 @@ export function LocationSection() {
         <Reveal>
           <h2
             style={{
-              fontFamily: "Instrument Serif",
+              fontFamily: "figtree",
             }}
-            className="text-sm font-medium tracking-[0.2em] uppercase text-cream/80 mb-16"
+            className="text-xl font-medium tracking-[0.2em] uppercase text-cream/80 mb-16"
           >
             LOCATION
           </h2>

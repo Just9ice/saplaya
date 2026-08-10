@@ -1,6 +1,4 @@
-﻿
-
-export function Footer() {
+﻿export function Footer() {
   return (
     <footer className="w-full bg-[#FCFAF6]">
       {/* Top Section */}
@@ -25,11 +23,9 @@ export function Footer() {
       <div className="border-t border-line/40">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row lg:px-10">
           <span className="text-xs text-mist">
-            Â© 2026 Saplaya Residency. All rights reserved.
+            © 2026 Saplaya Residency. All rights reserved.
           </span>
-          <span className="text-xs text-mist">
-            Apapa Â· Lagos Â· Nigeria
-          </span>
+          <span className="text-xs text-mist">Apapa · Lagos · Nigeria</span>
         </div>
       </div>
     </footer>
