@@ -2,7 +2,7 @@
 import { Reveal } from "@/components/reveal";
 
 const specs = [
-  { label: "Area", value: "370 sqm" },
+  { label: "Area", value: "270 sqm" },
   { label: "Bedrooms", value: "4 en-suite" },
   { label: "Outdoor", value: "Balcony · Courtyard" },
   { label: "Extras", value: "Lift · Kitchen (optional)" },
@@ -21,8 +21,8 @@ export function ExecutiveTerracesSection() {
             </h2>
           </Reveal>
           <Reveal delay={0.1} from="right" className="max-w-xs">
-            <p className="text-sm leading-relaxed text-mist">
-              10 executive terraces designed for families and executives seeking
+            <p className="text-sm leading-relaxed text-mist/80">
+              16 executive terraces designed for families and executives seeking
               privacy, space, and premium living.
             </p>
           </Reveal>
@@ -60,19 +60,19 @@ export function ExecutiveTerracesSection() {
               </em>{" "}
               &amp; presence.
             </h3>
-            <p className="mt-5 text-lg leading-relaxed text-mist">
+            <p className="mt-5 text-lg leading-relaxed text-mist/80">
               A four-bedroom terrace designed for families and executives who
               expect room to live, and an address that signals arrival.
             </p>
 
             {/* Specs */}
-            <dl className="mt-8 grid grid-cols-2 gap-px">
+            <dl className="mt-8 grid grid-cols-2 gap-px border-t border-gold/20 border-b border-gold/30 pt-10 pb-10">
               {specs.map((s) => (
                 <div key={s.label} className="px-5 py-4">
-                  <dt className="text-[10px] font-semibold uppercase tracking-widest text-mist/60">
+                  <dt className="text-[10px] font-semibold uppercase tracking-widest text-mist">
                     {s.label}
                   </dt>
-                  <dd className="mt-1.5 text-sm font-medium text-ink">
+                  <dd className="mt-1.5 text-sm font-medium text-mist/60">
                     {s.value}
                   </dd>
                 </div>

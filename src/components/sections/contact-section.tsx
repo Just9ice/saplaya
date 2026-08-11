@@ -1,6 +1,8 @@
-﻿"use client";
+"use client";
 import { useState } from "react";
 import { Reveal } from "@/components/reveal";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
 
 export function ContactSection() {
   const [form, setForm] = useState({
@@ -31,20 +33,44 @@ export function ContactSection() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Left */}
           <Reveal className="flex flex-col justify-center">
-            <h2 className="font-display text-5xl font-semibold leading-tight text-cream lg:text-6xl">
+            <h2 className="font-display text-5xl leading-tight text-cream lg:text-6xl">
               Send a<br />
               <em className="italic text-gold">message</em>
             </h2>
-            <p className="mt-6 max-w-xs text-sm leading-relaxed text-cream/55">
+            <p className="mt-6 max-w-xs text-sm leading-relaxed text-white">
               Be the first to access exclusive events, curated resources, and
               professional opportunities.
             </p>
-            <p className="mt-12 text-xs uppercase tracking-[0.15em] text-cream/35">
-              Website
-            </p>
-            <p className="mt-1 text-sm text-cream/80 hover:text-white transition-colors cursor-pointer">
-              saplayaresidency.com
-            </p>
+            <div className="mt-12 flex flex-col gap-6">
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <FaWhatsapp className="h-4 w-4 text-white" />
+                  <p className="text-xs uppercase tracking-[0.15em] text-white">
+                    WhatsApp
+                  </p>
+                </div>
+                <p className="text-sm text-white/60 hover:text-white transition-colors cursor-pointer">
+                  08100574063
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <FiInstagram className="h-4 w-4 text-white" />
+                  <p className="text-xs uppercase tracking-[0.15em] text-white">
+                    Instagram
+                  </p>
+                </div>
+                <a
+                  href="https://instagram.com/musestudiong"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-white/60 hover:text-white transition-colors cursor-pointer underline underline-offset-[3px]"
+                >
+                  musestudiong
+                </a>
+              </div>
+            </div>
           </Reveal>
 
           {/* Form */}

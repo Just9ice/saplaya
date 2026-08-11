@@ -362,18 +362,22 @@ export function AmenitiesSection() {
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <Reveal className="max-w-xl">
             <h2 className="text-4xl leading-tight lg:text-5xl">
-              <span className="font-display text-[#083d80]">A residency that </span>
+              <span className="font-display text-[#083d80]">
+                A residency that{" "}
+              </span>
               <br />
               <span className="font-display italic text-gold">
                 looks after
               </span>{" "}
-              <span className="font-display text-[#083d80]">its residents.</span>
+              <span className="font-display text-[#083d80]">
+                its residents.
+              </span>
             </h2>
           </Reveal>
           <Reveal delay={0.12} from="right" className="max-w-sm">
-            <p className="text-sm leading-relaxed text-mist">
+            <p className="text-sm leading-relaxed text-mist/80">
               Every amenity at Saplaya is staffed, serviced, and quietly
-              maintained â€” the kind of effortlessness one finds at a private
+              maintained - the kind of effortlessness one finds at a private
               resort.
             </p>
           </Reveal>

@@ -62,7 +62,8 @@ export function PartnersSection() {
                       src={`/images/logos/${partner.logo}`}
                       alt={`${partner.name} logo`}
                       fill
-                      className="object-contain object-center border border-[#BE9F70] p-2"
+                      sizes="(min-width: 1024px) 100px, 80vw"
+                      className="object-contain object-center border border-[#BE9F70] p-2 rounded-lg"
                     />
                   </div>
                 </div>
