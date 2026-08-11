@@ -1,10 +1,10 @@
-﻿import { ApartmentCard } from "@/components/apartment-card";
+import { ApartmentCard } from "@/components/apartment-card";
 import { Reveal } from "@/components/reveal";
 
 const apartments = [
   {
-    image: "/images/apt-two-bed-ext.png",
-    hoverImage: "/images/apt-two-bed-hover.png",
+    image: "/images/apartment-2.png",
+    hoverImage: "/images/apartment-1.jpeg",
     imageAlt:
       "Two-bedroom apartment building facade with resident courtyard, Saplaya Residency",
     type: "Two Bedrooms",
@@ -17,8 +17,8 @@ const apartments = [
     ],
   },
   {
-    image: "/images/apt-one-bed-ext.png",
-    hoverImage: "/images/apt-one-bed-hover.png",
+    image: "/images/apartment-3.png",
+    hoverImage: "/images/apartment-6.png",
     imageAlt:
       "One-bedroom apartment exterior with contemporary street-level entrance, Saplaya Residency",
     type: "One Bedroom",
@@ -31,8 +31,8 @@ const apartments = [
     ],
   },
   {
-    image: "/images/apt-studio-ext.png",
-    hoverImage: "/images/apt-studio-hover.png",
+    image: "/images/apartment-5.png",
+    hoverImage: "/images/apartment-4.png",
     imageAlt:
       "Studio apartment building with secure access and bike storage, Saplaya Residency",
     type: "The Studio",

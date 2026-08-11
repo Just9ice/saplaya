@@ -387,7 +387,7 @@ export function AmenitiesSection() {
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-12 lg:gap-6">
           {[
             {
-              src: "/images/hero.jpg",
+              src: "/images/parking.jpg",
               alt: "Saplaya Residency landscaped courtyard and swimming pool with residents",
               delay: 0,
               colSpan: "sm:col-span-7",

@@ -21,7 +21,7 @@ export function ExecutiveTerracesSection() {
             </h2>
           </Reveal>
           <Reveal delay={0.1} from="right" className="max-w-xs">
-            <p className="text-sm leading-relaxed text-mist/80">
+            <p className="text-lg leading-relaxed text-mist/80">
               16 executive terraces designed for families and executives seeking
               privacy, space, and premium living.
             </p>
@@ -36,8 +36,9 @@ export function ExecutiveTerracesSection() {
             className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl"
           >
             <Image
-              src="/images/terrace.png"
+              src="/images/saplaya-terrace-32.png"
               alt="Aerial drone view of Saplaya Residency executive terraces with landscaped courtyards"
+              quality={99}
               fill
               sizes="(min-width:1024px) 50vw, 90vw"
               className="object-cover"
