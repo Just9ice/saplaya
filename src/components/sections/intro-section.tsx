@@ -6,7 +6,7 @@ export function IntroSection() {
       <div className="mx-auto max-w-5xl px-6 text-center">
         <Reveal>
           <p
-            className="text-2xl leading-relaxed text-mist/80 lg:text-3xl"
+            className="text-[28px] leading-[40px] text-mist/80 lg:text-[32px] lg:leading-[56px]"
             style={{
               fontFamily: "Figtree",
               letterSpacing: "-2px",
@@ -28,7 +28,7 @@ export function IntroSection() {
         </Reveal>
         <Reveal delay={0.15}>
           <p
-            className="mt-7 text-[30px] leading-relaxed text-mist/80"
+            className="mt-7 text-[28px] leading-[40px] text-mist/80 lg:text-[32px] lg:leading-[56px]"
             style={{
               fontFamily: "Figtree",
               letterSpacing: "-2px",

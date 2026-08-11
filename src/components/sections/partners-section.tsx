@@ -38,7 +38,12 @@ export function PartnersSection() {
     <section id="partners" className="w-full bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <Reveal>
-          <h2 className="text-4xl font-semibold leading-tight lg:text-5xl text-[#083d80] mb-16">
+          <h2
+            className="text-4xl font-semibold leading-tight lg:text-5xl text-[#083d80] mb-16"
+            style={{
+              fontFamily: "Instrument Serif",
+            }}
+          >
             Built by names you can trust.
           </h2>
         </Reveal>

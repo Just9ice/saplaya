@@ -66,7 +66,7 @@ export function ApartmentCard({
 
         {/* Info overlay — rises from the bottom; variant propagated from parent */}
         <motion.div
-          className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white/70 to-white/15 backdrop-blur-md px-5 pb-6 pt-5 will-change-transform"
+          className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white/85 to-white/60 backdrop-blur-md px-5 pb-6 pt-5 will-change-transform"
           variants={{
             idle: {
               y: "100%",

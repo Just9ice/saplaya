@@ -375,7 +375,7 @@ export function AmenitiesSection() {
             </h2>
           </Reveal>
           <Reveal delay={0.12} from="right" className="max-w-sm">
-            <p className="text-sm leading-relaxed text-mist/80">
+            <p className="text-lg leading-relaxed text-mist/80">
               Every amenity at Saplaya is staffed, serviced, and quietly
               maintained - the kind of effortlessness one finds at a private
               resort.

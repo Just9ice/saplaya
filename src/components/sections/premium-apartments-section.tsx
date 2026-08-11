@@ -59,7 +59,7 @@ export function PremiumApartmentsSection() {
             </h2>
           </Reveal>
           <Reveal delay={0.1} from="right" className="max-w-xs">
-            <p className="text-sm leading-relaxed text-mist/80">
+            <p className="text-lg leading-relaxed text-mist/80">
               60 apartments, designed for professionals,
               <br className="hidden sm:block" />
               investors, and corporate rentals.
