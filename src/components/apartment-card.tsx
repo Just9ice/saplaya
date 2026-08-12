@@ -51,7 +51,7 @@ export function ApartmentCard({
           src={image}
           alt={imageAlt}
           fill
-          quality={99}
+          unoptimized
           sizes="(min-width:1024px) 32vw, 90vw"
           className={`absolute inset-0 object-cover transition-all duration-700 ease-out group-hover:scale-[1.06] ${hoverImage ? "group-hover:opacity-0" : ""}`}
         />
@@ -60,7 +60,7 @@ export function ApartmentCard({
             src={hoverImage}
             alt={`${imageAlt} interior view`}
             fill
-            quality={99}
+            unoptimized
             sizes="(min-width:1024px) 32vw, 90vw"
             className="absolute inset-0 object-cover opacity-0 transition-all duration-700 ease-out group-hover:scale-[1.06] group-hover:opacity-100"
           />

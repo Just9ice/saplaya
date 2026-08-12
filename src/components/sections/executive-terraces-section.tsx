@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 
 const specs = [
@@ -38,7 +38,7 @@ export function ExecutiveTerracesSection() {
             <Image
               src="/images/saplaya-terrace-32.png"
               alt="Aerial drone view of Saplaya Residency executive terraces with landscaped courtyards"
-              quality={99}
+              unoptimized
               fill
               sizes="(min-width:1024px) 50vw, 90vw"
               className="object-cover"
